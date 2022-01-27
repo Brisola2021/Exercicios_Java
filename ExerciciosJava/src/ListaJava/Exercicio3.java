@@ -14,15 +14,16 @@ public class Exercicio3 {
 		
 		
 		
-		int N, horas, minutos, segundos;
+		double N, horas, minutos, segundos;
 		
 		Scanner leiaa = new Scanner(System.in); {
-		
-		N = leiaa.nextInt();
+			
+		System.out.println("Digite a duração em segundos do evento : ");
+		N = leiaa.nextDouble();
 		
 		horas = N / 3600;
 		minutos = (N % 3600) / 60;
-		segundos = (N % 3600) % 60;
+		segundos = N;
 		
 		System.out.println("O tempo expresso em horas é: "+ horas);
 		System.out.println("O tempo expresso em minutos é: "+ minutos);

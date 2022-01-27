@@ -13,19 +13,23 @@ public class Exercicio2 {
 		
 		Scanner mostra = new Scanner(System.in);
 		
-		int idade = mostra.nextInt();
-		int dias = mostra.nextInt();
-		int mes = mostra.nextInt();
+		int idade;
+		int dias;
+		int mes;
 		
-		System.out.println("Idade"+ idade);
+		System.out.println("Digite Idade");
+		idade = mostra.nextInt();
 		
 		mes = (12 * idade);
 		
-		System.out.println("Mês" + mes);
-		
 		dias = (365*idade);
 		
-		System.out.println("Dias" + dias);
+		System.out.println("seu tempo de Mês é " + mes);
+		
+		System.out.println("Seu tempo em Dias é " + dias);
+		
+		System.out.println("Seu tempo em anos é " + idade);
+		
 				
 		mostra.close();
 	}
